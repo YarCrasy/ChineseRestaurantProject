@@ -6,7 +6,7 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 
 //page imports
-import MainPage from './pages/main-page/MainPage'
+import HomePage from './pages/home-page/HomePage'
 import NotFound from './pages/not-found-page/NotFound'
 
 //style imports
@@ -41,8 +41,8 @@ function App() {
 			<Router>
 				<Routes>
 					<Route path="*" element={<NotFound />} />
-					<Route path="/" element={<MainPage dishes={DISHES} />} />
-					<Route path="/MainPage" element={<MainPage dishes={DISHES} />} />
+					<Route path="/" element={<HomePage dishes={DISHES} />} />
+					<Route path="/home" element={<HomePage dishes={DISHES} />} />
 				</Routes>
 			</Router>
 

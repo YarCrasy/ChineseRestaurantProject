@@ -1,18 +1,20 @@
-import React from 'react';
+import { useEffect } from 'react';
 import './Header.css';
 import logo from '../../assets/icon-imgs/logo.png';
 import menuIcon from '../../assets/icon-imgs/header-menu-icon.svg';
 import initializeMenu from './HeaderMenuBehaviour';
+import languageSelection from './LanguageSelection';
 
 function Header() {
-    React.useEffect(() => {
+    useEffect(() => {
         initializeMenu();
+        languageSelection();
     }, []);
 
     return (
         <header>
             <nav className="nav">
-                <a href="/MainPage">
+                <a href="/home">
                     <div className="logo-container">
                         <img src={logo} alt="Logo" className="logo-img" />
                         <h1 className="logo">Chuan Min Fusion</h1>
@@ -28,8 +30,8 @@ function Header() {
                         <div className="lang-dropdown">
                             <button className="dropdown-btn">EN ▼</button>
                             <div className="dropdown-content">
-                                <a href="" data-lang="en">English</a>
-                                <a href="" data-lang="es">Español</a>
+                                <a data-lang="en">English</a>
+                                <a data-lang="es">Español</a>
                             </div>
                         </div>
                     </div>

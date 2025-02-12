@@ -4,6 +4,12 @@
   <img align="center" class="header-icon" src="src/assets/icon-imgs/lcj-icon.jpg" alt="icon" />
   <p>Author: Yar Crasy (LINGCHENG JIANG)</p>
  </div>
+
+ ## IMPORTANT - FISRT TIME CLONING THE REPOSITIORY
+Due to this repository has a .gitignore that disable the /node_modules push, every time that it is cloned into a new machine/environment it is necesary to run this first in the terminal/console:
+```
+npm install
+```
  
  ## About the Project
 <p>
@@ -18,9 +24,9 @@
  * React+Vite
 
 ## Composition
-the web is made 
+the web is composed mainly with 2 components, header and footer. The main tag is changed by the pages in each route.
 
 
 ## Inspired in
-<p>As a requirement of the project, it must be inspirated in one of the design from the web <b>dribbble</b>.</p> 
-In this case, it was inspired in <a href="https://dribbble.com/shots/23895796-Wegrow-design"><b>this design</b></a>.
+<p>As a requirement of the project, it must be inspirated in one of the design from the web <b>Figma</b>.</p> 
+In this case, it was inspired in <a href="https://www.figma.com/community/file/1278204274454603082"><b>this design</b></a> but adapting thematic from telepizza and chinese food.
