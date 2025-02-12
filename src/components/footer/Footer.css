@@ -21,25 +21,10 @@ footer {
     gap: 2rem;
 }
 
-.footer-links a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: var(--secondary-color);
-    text-shadow: var(--green-glow);
-    transform: translateY(-2px);
-}
 
 .social-links {
     display: flex;
     gap: 1.5rem;
-}
-
-.social-links a {
-    transition: all 0.3s ease;
 }
 
 .social-icon {
@@ -48,12 +33,6 @@ footer {
     fill: white;
     filter: brightness(1) drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
     transition: all 0.3s ease;
-}
-
-.social-links a:hover .social-icon {
-    fill: var(--secondary-color);
-    filter: drop-shadow(0 0 5px var(--secondary-color));
-    transform: translateY(-2px);
 }
 
 .social-container {

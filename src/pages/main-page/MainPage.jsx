@@ -6,7 +6,7 @@ function MainPage({ dishes }) {
         <main>
             <h1>Welcome to the Main Page</h1>
             <p>hola</p>
-            <section>
+            <section id="simple-menu-section">
                 {dishes.map((dish, index) => (
                     <SimpleDishCard dish={dish} key={index} />
                 ))}

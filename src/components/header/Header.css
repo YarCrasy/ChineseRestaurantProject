@@ -7,18 +7,6 @@ header {
     z-index: 1000;
 }
 
-header a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem;
-}
-
-header a:hover {
-    color: var(--secondary-color);
-    text-shadow: var(--green-glow);
-}
-
 .nav {
     max-width: 1200px;
     margin: 0 auto;
@@ -102,9 +90,7 @@ header a:hover {
 
 .dropdown-content a {
     text-align: center;
-    padding: 0.8rem 1rem;
     display: block;
-    white-space: nowrap;
 }
 
 .lang-dropdown:hover .dropdown-content {
