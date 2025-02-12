@@ -13,19 +13,19 @@ function Footer() {
                     <a href="#contact">Contact</a>
                 </div>
                 <div className="social-container">
-                    <h4 class="social-title">Social Media</h4>
-                    <div class="social-links">
-                        <a href="https://github.com/YarCrasy" target="_blank">
-                            <img src={github} alt="GitHub" class="social-icon"/>
+                    <h4 className="social-title">Social Media</h4>
+                    <div className="social-links">
+                        <a href="https://github.com/YarCrasy/ChineseRestaurantProject" target="_blank">
+                            <img src={github} alt="GitHub" className="social-icon"/>
                         </a>
                         <a href="https://www.linkedin.com/in/jlc-gamedev/" target="_blank">
-                            <img src={linkedin} alt="LinkedIn" class="social-icon"/>
+                            <img src={linkedin} alt="LinkedIn" className="social-icon"/>
                         </a>
                         <a href="https://twitter.com/" target="_blank">
-                            <img src={twitter} alt="X(Twitter)" class="social-icon"/>
+                            <img src={twitter} alt="X(Twitter)" className="social-icon"/>
                         </a>
                         <a href="https://www.youtube.com/@Yar-Crasy" target="_blank">
-                            <img src={youtube} alt="YouTube" class="social-icon"/>
+                            <img src={youtube} alt="YouTube" className="social-icon"/>
                         </a>
                     </div>
                 </div>

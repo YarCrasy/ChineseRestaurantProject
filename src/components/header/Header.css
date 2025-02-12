@@ -2,10 +2,21 @@ header {
     background: var(--red-gradient);
     box-shadow: 0 2px 10px rgba(139, 0, 0, 0.3);
     padding: 1rem;
-    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+header a:hover {
+    color: var(--secondary-color);
+    text-shadow: var(--green-glow);
 }
 
 .nav {
@@ -51,17 +62,6 @@ header {
     gap: 2rem;
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem;
-}
-
-.nav-links a:hover {
-    color: var(--secondary-color);
-    text-shadow: var(--green-glow);
-}
 
 /* Language Dropdown */
 .lang-dropdown {

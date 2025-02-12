@@ -2,10 +2,11 @@ import "./NotFound.css";
 
 function NotFound() {
     return (
-        <div className="not-found">
+        <main>
             <h1>404</h1>
             <p>Page not found</p>
-        </div>
+            <p>Sorry, the page you are looking for does not exist.</p>
+        </main>
     );
 }
 

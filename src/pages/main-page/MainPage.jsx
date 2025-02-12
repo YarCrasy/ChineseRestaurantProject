@@ -1,11 +1,17 @@
+import { SimpleDishCard } from "../../components/simple-dish-card/SimpleDishCard";
 import "./MainPage.css";
 
-function MainPage() {
+function MainPage({ dishes }) {
     return (
-        <div className="main-page">
-            <h1>Home</h1>
-            <p>Welcome to the main page</p>
-        </div>
+        <main>
+            <h1>Welcome to the Main Page</h1>
+            <p>hola</p>
+            <section>
+                {dishes.map((dish, index) => (
+                    <SimpleDishCard dish={dish} key={index} />
+                ))}
+            </section>
+        </main>
     );
 }
 
