@@ -127,6 +127,7 @@ section h2 {
     text-shadow: var(--secondary-color);
     position: relative;
     padding-bottom: 0.8rem;
+    z-index: 1;
 }
 
 section h2::after {
@@ -139,6 +140,7 @@ section h2::after {
     height: 2px;
     background: var(--red-gradient);
     border-radius: 2px;
+    z-index: 1;
 }
 
 @media (min-width: 768px) {

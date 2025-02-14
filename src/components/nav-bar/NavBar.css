@@ -20,22 +20,3 @@
     align-items: center;
     cursor: pointer;
 }
-
-/* Media query for mobile devices or portrait mode */
-@media (max-width: 768px), (orientation: portrait) {
-    .nav-bar {
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50px;
-        min-height: 50px;
-        flex-direction: row;
-        justify-content: space-around;
-        border-radius: 0;
-    }
-
-    .nav-bar .nav-item {
-        width: 30px;
-        height: 30px;
-    }
-}
