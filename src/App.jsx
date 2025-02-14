@@ -12,6 +12,9 @@ import NotFound from './pages/not-found-page/NotFound'
 
 //style imports
 import './App.css'
+import MenuPage from './pages/menu-page/MenuPage';
+import ContactPage from './pages/contact-page/ContantPage';
+
 
 function App() {
     const DISHES = [
@@ -19,19 +22,19 @@ function App() {
             name: "Dish 1",
             description: "Description 1",
             price: "$10",
-            img: "https://via.placeholder.com/150",
+            img: "/assets/icon-imgs/logo.png",
         },
         {
             name: "Dish 2",
             description: "Description 2",
             price: "$20",
-            img: "https://via.placeholder.com/150",
+            img: "/assets/icon-imgs/logo.png",
         },
         {
             name: "Dish 3",
             description: "Description 3",
             price: "$30",
-            img: "https://via.placeholder.com/150",
+            img: "/assets/icon-imgs/logo.png",
         },
 
     ];
@@ -45,6 +48,8 @@ function App() {
 					<Route path="*" element={<NotFound />} />
 					<Route path="/" element={<HomePage dishes={DISHES} />} />
 					<Route path="/home" element={<HomePage dishes={DISHES} />} />
+                    <Route path="/menu" element={<MenuPage dishes={DISHES} />} />
+                    <Route path="/contact" element={<ContactPage/>} />
 				</Routes>
 			</Router>
 
