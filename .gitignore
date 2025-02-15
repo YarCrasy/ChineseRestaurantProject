@@ -1,5 +1,5 @@
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -8,19 +8,25 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Node modules
-node_modules
+node_modules/
 
 # Build output
-dist
-dist-ssr
+dist/
+dist-ssr/
+.vite/
+build/
+
+# Firebase
+.firebase/
+hosting.ZGlzdA.cache
 
 # Local environment files
 *.local
 
 # Editor directories and files
-.vscode/*
+.vscode/
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
@@ -28,17 +34,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Dependency directories
-node_modules/
-
-# Production
-build/
-
-# Miscellaneous
-*.log
-*.lock
+# Miscellaneous temporary files
 *.tmp
 *.temp
-
-# Vite
-.vite
+*.lock
