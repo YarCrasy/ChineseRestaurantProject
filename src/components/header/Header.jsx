@@ -25,8 +25,8 @@ function Header() {
                 </button>
                 <div className="nav-menu">
                     <div className="nav-links">
-                        <a href="#menu">Menu</a>
-                        <a href="#contact">Contact</a>
+                        <a href="/menu">Menu</a>
+                        <a href="/contact">Contact</a>
                         <div className="lang-dropdown">
                             <button className="dropdown-btn">EN ▼</button>
                             <div className="dropdown-content">
