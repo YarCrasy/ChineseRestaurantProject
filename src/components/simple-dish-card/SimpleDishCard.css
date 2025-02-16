@@ -1,18 +1,22 @@
 .simple-dish-card{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 300px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 50px;
+    padding: 10px;
+    align-items: center;
 }
 
-.dish-img{
-    height: 30%;
-    display: flex;
-    object-fit: cover;
-    flex-shrink: 0;
+.simple-dish-card img{
+    width: 80%;
+}
+
+.simple-dish-card h3{
+    font-size: 1.5rem;
+    margin: 0;
+    
+    background-color: red;
 }
