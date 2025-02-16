@@ -49,14 +49,12 @@ body {
 
 /* Layout */
 main {
-    padding: 1rem;
     z-index: 1;
     min-height: 85vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 3rem;
 }
 
 a{
@@ -77,13 +75,19 @@ a:hover {
 
 section {
     width: 100%;
-    margin: 2rem auto;
-    padding: 0 1rem;
     text-align: center;
+    scroll-margin-top: 10px;
+}
+
+.section-content{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
 }
 
 /* Componentes globales */
-.btn, button, input[type="submit"] {
+button {
     width: 100%;
     background: var(--red-gradient);
     color: white;
@@ -97,7 +101,7 @@ section {
     box-shadow: var(--green-glow);
 }
 
-.btn:hover, button:hover, input[type="submit"]:hover {
+button:hover {
     transform: translateY(-2px);
     background: var(--green-gradient);
     border-color: var(--secondary-color);
@@ -105,7 +109,7 @@ section {
 
 /* Scrollbar personalizado */
 ::-webkit-scrollbar {
-    width: 16px;
+    width: 15px;
     background: var(--scrollbar-bg);
 }
 
@@ -151,7 +155,7 @@ section h2::after {
         padding: 0 var(--section-padding);
     }
 
-    .btn, button, input[type="submit"] {
+    button {
         width: auto;
         padding: 0.8rem 1.5rem;
     }
