@@ -22,19 +22,19 @@ function App() {
             name: "Dish 1",
             description: "Description 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
             price: "$10",
-            img: "/assets/icon-imgs/lcj-icon.jpg",
+            img: "/src/assets/icon-imgs/lcj-icon.jpg",
         },
         {
             name: "Dish 2",
             description: "Description 2",
             price: "$20",
-            img: "/assets/icon-imgs/logo.png",
+            img: "/src/assets/icon-imgs/logo.png",
         },
         {
             name: "Dish 3",
             description: "Description 3",
             price: "$30",
-            img: "/assets/icon-imgs/logo.png",
+            img: "/src/assets/icon-imgs/logo.png",
         },
 
     ];
