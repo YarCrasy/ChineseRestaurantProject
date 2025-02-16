@@ -20,19 +20,37 @@ function App() {
     const DISHES = [
         {
             name: "Dish 1",
-            description: "Description 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
             price: "$10",
-            img: "/src/assets/icon-imgs/lcj-icon.jpg",
+            img: "/src/assets/icon-imgs/logo.png",
         },
         {
             name: "Dish 2",
-            description: "Description 2",
+            description: "Lorem ipsum dolor sit amet",
             price: "$20",
             img: "/src/assets/icon-imgs/logo.png",
         },
         {
             name: "Dish 3",
-            description: "Description 3",
+            description: "consectetur adipiscing elit sed do eiusmod tempor",
+            price: "$30",
+            img: "/src/assets/icon-imgs/logo.png",
+        },
+        {
+            name: "Dish 4",
+            description: "consectetur adipiscing elit sed do eiusmod tempor",
+            price: "$30",
+            img: "/src/assets/icon-imgs/logo.png",
+        },
+        {
+            name: "Dish 5",
+            description: "consectetur adipiscing elit sed do eiusmod tempor",
+            price: "$30",
+            img: "/src/assets/icon-imgs/logo.png",
+        },
+        {
+            name: "Dish 6",
+            description: "consectetur adipiscing elit sed do eiusmod tempor",
             price: "$30",
             img: "/src/assets/icon-imgs/logo.png",
         },

@@ -3,7 +3,7 @@ import Carrousel from "../../components/carrousel/Carrousel";
 import "./HomePage.css";
 
 function HomePage(prop) {
-    const slides = prop.dishes.map((dish, index) => (
+    const simpleCards = prop.dishes.map((dish, index) => (
         <SimpleDishCard dish={dish} key={index} />
     ));
 
@@ -12,7 +12,7 @@ function HomePage(prop) {
         <main>
             <section id="section-1">
                 <h2>Our Best Sellers</h2>
-                <Carrousel slides={slides} />
+                <Carrousel simpleCards={simpleCards} autoPlay={false}/>
             </section>
         </main>
     );
