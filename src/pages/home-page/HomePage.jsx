@@ -15,7 +15,7 @@ function HomePage(prop) {
             </section>
             <section id="section-1">
                 <h2>Our Best Sellers</h2>
-                <Carousel simpleCards={simpleCards}/>
+                <Carousel contentList={simpleCards}/>
             </section>
         </main>
     );

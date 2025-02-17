@@ -2,25 +2,25 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './Carousel.css';
 
-const Carousel = ({ simpleCards, autoPlay = true, autoPlayTime = 3000 }) => {
+function Carousel({ contentList, autoPlay = true, autoPlayTime = 3000 }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
         let interval;
         if (autoPlay) {
             interval = setInterval(() => {
-                setCurrentIndex(prev => (prev + 1) % simpleCards.length);
+                setCurrentIndex(prev => (prev + 1));
             }, autoPlayTime);
         }
         return () => clearInterval(interval);
-    }, [autoPlay, autoPlayTime, simpleCards.length]);
+    }, [autoPlay, autoPlayTime, contentList.length]);
 
     const handlePrev = () => {
-        setCurrentIndex(prev => (prev === 0 ? simpleCards.length - 1 : prev - 1));
+        setCurrentIndex(prev => (prev === 0 ? contentList.length - 1 : prev - 1));
     };
 
     const handleNext = () => {
-        setCurrentIndex(prev => (prev + 1) % simpleCards.length);
+        setCurrentIndex(prev => (prev + 1) % contentList.length);
     };
 
     return (
@@ -32,16 +32,15 @@ const Carousel = ({ simpleCards, autoPlay = true, autoPlayTime = 3000 }) => {
                     ‹
                 </button>
                 <div className="carousel-container">
-                    {simpleCards.map((card, index) => (
+                    {contentList.map((item, index) => (
                         <div
                             key={index}
-                            className="carousel-card"
+                            className="carousel-item"
                             style={{
-                                flex: '0 0 100%',
-                                transform: `translateX(-${currentIndex * 100}%)`,
+                                transform: `translateX(${(index - currentIndex) * 100}%)`,
                                 transition: 'transform 0.5s ease-in-out'
                             }}>
-                            {card}
+                            {item}
                         </div>
                     ))}
                 </div>
@@ -52,7 +51,7 @@ const Carousel = ({ simpleCards, autoPlay = true, autoPlayTime = 3000 }) => {
                 </button>
             </div>
             <div className="carousel-dots">
-                {simpleCards.map((_, index) => (
+                {contentList.map((_, index) => (
                     <span
                         key={index}
                         className={`carousel-dot ${index === currentIndex ? 'active' : ''}`}
@@ -65,7 +64,7 @@ const Carousel = ({ simpleCards, autoPlay = true, autoPlayTime = 3000 }) => {
 };
 
 Carousel.propTypes = {
-    simpleCards: PropTypes.arrayOf(PropTypes.element).isRequired,
+    contentList: PropTypes.arrayOf(PropTypes.element).isRequired,
     autoPlay: PropTypes.bool,
     autoPlayTime: PropTypes.number
 };
