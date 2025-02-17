@@ -5,10 +5,10 @@
 @media (min-width: 768px){
     .nav-bar{
         background-color: white;
-        position: absolute;
+        position: fixed;
         width: 25px;
         top: 50%;
-        right: 10%;
+        left: 95%;
         border-radius: 50px;
         flex-direction: column;
         border: 1px solid black;

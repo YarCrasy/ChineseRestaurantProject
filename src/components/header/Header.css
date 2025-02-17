@@ -1,6 +1,6 @@
 header {
     background: var(--red-gradient);
-    box-shadow: 0 2px 10px rgba(139, 0, 0, 0.3);
+    box-shadow: 0 2px 10px rgba(146, 0, 0, 0.5);
     width: 100%;
     top: 0;
     z-index: 1000;
