@@ -54,6 +54,12 @@ function App() {
             price: "$30",
             img: "/src/assets/icon-imgs/logo.png",
         },
+        {
+            name: "Dish 7",
+            description: "consectetur adipiscing elit sed do eiusmod tempor",
+            price: "$30",
+            img: "/src/assets/icon-imgs/logo.png",
+        },
 
     ];
 	return (

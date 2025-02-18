@@ -7,7 +7,6 @@ function HomePage(prop) {
         <SimpleDishCard dish={dish} key={index} />
     ));
 
-    
     return (
         <main>
             <section id="section-0">
