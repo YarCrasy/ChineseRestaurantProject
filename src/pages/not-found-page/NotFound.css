@@ -1,0 +1,20 @@
+#section-0 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#section-0::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/icon-imgs/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.1;
+    z-index: -1;
+}

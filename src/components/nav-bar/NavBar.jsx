@@ -11,9 +11,14 @@ function NavBar() {
   }, []);
 
   return (
-    <nav className="nav-bar">
+    <nav 
+      className="nav-bar" 
+      style={{ display: sections.length === 0 ? "none" : undefined }} /* Conditional display */
+    >
       {sections.map((section, index) => (
-        <a key={index} href={`#section-${index}`}><img src={HomeIcon} alt={`Section${index + 1}`} /></a>
+        <a key={index} href={`#section-${index}`}>
+          <img src={HomeIcon} alt={`Section${index + 1}`} />
+        </a>
       ))}
     </nav>
   );

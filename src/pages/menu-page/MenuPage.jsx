@@ -3,7 +3,9 @@ import "./MenuPage.css";
 function MenuPage(){
     return (
         <main>
-            <h1>Work in Progress</h1>
+            <section id="section-0">
+                <h2>WORK IN PROGRESS</h2>
+            </section>
         </main>
     );
 }
