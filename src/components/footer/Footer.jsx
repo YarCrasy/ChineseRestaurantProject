@@ -9,7 +9,7 @@ function Footer() {
         <footer>
             <div className="footer-content">
                 <div className="footer-links">
-                    <a href="#menu">Menu</a>
+                    <a href="#menu"></a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div className="social-container">

@@ -19,9 +19,13 @@ footer {
 
 .footer-links {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
 }
 
+.footer-links a {
+    margin: 0;
+    padding: 0;
+}
 
 .social-links {
     display: flex;
