@@ -1,5 +1,6 @@
 //library imports
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
 
 //component imports
 import Footer from "./components/footer/Footer";
@@ -50,6 +51,23 @@ function App() {
         },
 
     ];
+
+    // Add IntersectionObserver to reveal sections when visible
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible')
+                    observer.unobserve(entry.target)
+                }
+            })
+        }, { threshold: 0.1 })
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section)
+        })
+    }, [])
+
 	return (
 		<>
 			<Header />
