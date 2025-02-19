@@ -47,7 +47,6 @@ body {
     color: #2E2E2E;
 }
 
-/* Layout */
 main {
     z-index: 1;
     min-height: 85vh;
@@ -85,9 +84,10 @@ section {
     height: 100vh;
     width: 100%;
     position: relative;
-    opacity: 0; /* initial hidden state */
-    transform: translateY(20px); /* initial offset */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* reveal transition */
+
+    opacity: 0; 
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 section::before {
@@ -105,13 +105,38 @@ section::before {
     z-index: -1;
 }
 
+section h2 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: var(--secondary-color);
+    position: relative;
+    padding-bottom: 0.8rem;
+    z-index: 1;
+    text-shadow: var(--green-glow);
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 5px;
+    background: var(--red-gradient);
+    border-radius: 2px;
+    z-index: 1;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
 .section-content{
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
-/* New style to reveal section when visible */
 section.visible {
     opacity: 1;
     transform: translateY(0);
@@ -138,7 +163,6 @@ button:hover {
     box-shadow: var(--green-glow);
 }
 
-/* Scrollbar personalizado */
 ::-webkit-scrollbar {
     width: 15px;
     background: var(--scrollbar-bg);
@@ -152,31 +176,4 @@ button:hover {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--scrollbar-thumb-hover);
-}
-
-/* Títulos de sección */
-section h2 {
-    color: var(--secondary-color);
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    text-shadow: var(--secondary-color);
-    position: relative;
-    padding-bottom: 0.8rem;
-    z-index: 1;
-    text-shadow: var(--green-glow);
-}
-
-section h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 150px;
-    height: 5px;
-    background: var(--red-gradient);
-    border-radius: 2px;
-    z-index: 1;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
 }

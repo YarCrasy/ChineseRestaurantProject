@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Dish1",
+        "category": "Category1",
+        "description": "Description1",
+        "price": 100,
+        "image": "src/assets/icon-imgs/logo.png"
+    },
+    {
+        "id": 2,
+        "name": "Dish2",
+        "category": "Category2",
+        "description": "Description2",
+        "price": 200,
+        "image": "src/assets/icon-imgs/logo.png"
+    },
+    {
+        "id": 3,
+        "name": "Dish3",
+        "category": "Category3",
+        "description": "Description3",
+        "price": 300,
+        "image": "src/assets/icon-imgs/logo.png"
+    },
+    {
+        "id": 4,
+        "name": "Dish4",
+        "category": "Category4",
+        "description": "Description4",
+        "price": 400,
+        "image": "src/assets/icon-imgs/logo.png"
+    },
+    {
+        "id": 5,
+        "name": "Dish5",
+        "category": "Category5",
+        "description": "Description5",
+        "price": 500,
+        "image": "src/assets/icon-imgs/logo.png"
+    },
+    {
+        "id": 6,
+        "name": "Dish6",
+        "category": "Category6",
+        "description": "Description6",
+        "price": 600,
+        "image": "src/assets/icon-imgs/logo.png"
+    },
+    {
+        "id": 7,
+        "name": "Dish7",
+        "category": "Category7",
+        "description": "Description7",
+        "price": 700,
+        "image": "src/assets/icon-imgs/logo.png"
+    },
+    {
+        "id": 8,
+        "name": "Dish8",
+        "category": "Category8",
+        "description": "Description8",
+        "price": 800,
+        "image": "src/assets/icon-imgs/logo.png"
+    },
+    {
+        "id": 9,
+        "name": "Dish9",
+        "category": "Category9",
+        "description": "Description9",
+        "price": 900,
+        "image": "src/assets/icon-imgs/logo.png"
+    },
+    {
+        "id": 10,
+        "name": "Dish10",
+        "category": "Category10",
+        "description": "Description10",
+        "price": 1000,
+        "image": "src/assets/icon-imgs/logo.png"
+    }
+]
