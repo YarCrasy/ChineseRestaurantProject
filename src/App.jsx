@@ -2,6 +2,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useEffect } from 'react'
 
+//style imports
+import './App.css'
+
 //component imports
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
@@ -11,9 +14,6 @@ import CookiesPanel from './components/cookies-panel/CookiesPanel';
 //page imports
 import HomePage from './pages/home-page/HomePage'
 import NotFound from './pages/not-found-page/NotFound'
-
-//style imports
-import './App.css'
 import MenuPage from './pages/menu-page/MenuPage';
 import ContactPage from './pages/contact-page/ContantPage';
 

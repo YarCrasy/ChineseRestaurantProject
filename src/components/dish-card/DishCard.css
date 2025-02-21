@@ -1,13 +1,25 @@
 .dish-card{
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 300px;
+    min-width: 200px;
+    max-width: 30%;
+    height: 400px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: var(--card-shadow);
     padding: 20px;
     align-items: center;
+}
+
+.dish-id{
+    position: relative;
+    align-self: flex-start;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    font-weight: bold;
+    border-radius: 25%;
+    padding: 10px;
 }
 
 .dish-card img{
