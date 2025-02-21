@@ -2,8 +2,8 @@ import SimpleDishCard from "../../components/simple-dish-card/SimpleDishCard";
 import Carousel from "../../components/carrousel/Carousel";
 import "./HomePage.css";
 
-function HomePage(prop) {
-    const simpleCards = prop.dishes.map((dish, index) => (
+function HomePage(props) {
+    const simpleCards = props.dishes.map((dish, index) => (
         <SimpleDishCard dish={dish} key={index} />
     ));
 

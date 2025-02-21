@@ -1,0 +1,17 @@
+.dish-card{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: var(--card-shadow);
+    padding: 20px;
+    align-items: center;
+}
+
+.dish-card img{
+    width: 140px;
+    box-shadow: var(--card-shadow);
+    border-radius: 15px;
+}
