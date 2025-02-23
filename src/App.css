@@ -45,16 +45,16 @@ body {
     line-height: 1.4;
     background: var(--background-gradient);
     color: #2E2E2E;
-    min-height: 100vh;
 }
 
 main {
     z-index: 1;
-    min-height: 100vh;
+    min-height: 85vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
 }
 
 a{
@@ -80,7 +80,9 @@ section {
     width: 100%;
     text-align: center;
     scroll-margin-top: -60px;
-    min-height: 100vh;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
     position: relative;
 
     opacity: 0; 
@@ -90,7 +92,11 @@ section {
 
 section::before {
     content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     background-image: url("./assets/icon-imgs/logo.png");
     background-repeat: no-repeat;
     background-size: contain;
