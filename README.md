@@ -34,6 +34,6 @@ In this case, it was inspired in <a href="https://www.figma.com/community/file/1
 
 
 ## Bibliography
-React Tutorial(Spanish): <a href="https://www.youtube.com/playlist?list=PLU8oAlHdN5BmlVfm2bJshR3qPtoyukQ_b">PildorasInformaticas</a>
-Google Map Impementation: <a href="https://developers.google.com/codelabs/maps-platform/maps-platform-101-react-js?hl=es-419#0">Google Maps</a>
+<p>React Tutorial(Spanish): <a href="https://www.youtube.com/playlist?list=PLU8oAlHdN5BmlVfm2bJshR3qPtoyukQ_b">PildorasInformaticas</a></p> 
+<p>Google Map Impementation: <a href="https://developers.google.com/codelabs/maps-platform/maps-platform-101-react-js?hl=es-419#0">Google Maps</a></p> 
 
