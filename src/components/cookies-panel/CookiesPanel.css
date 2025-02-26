@@ -1,11 +1,8 @@
 .cookies-panel{
     position: sticky;
     bottom: 20px;
-    width: 50%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 80%;
     margin: 30px auto;
-    min-height: 50px;
     background-color: #f1f1f1;
     padding: 20px;
     border-radius: 20px;

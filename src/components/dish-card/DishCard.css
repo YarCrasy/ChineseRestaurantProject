@@ -10,19 +10,20 @@
     padding: 20px;
     align-items: center;
     position: relative;
+    gap: 10px;
 }
 
 .dish-id{
     position: absolute;
     align-self: flex-start;
-    top: 7px;
-    right: 7px;
+    top: 20px;
+    right: 20px;
     background-color: red;
     font-weight: bold;
     border-radius: 25%;
-    padding: 5px;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
@@ -30,4 +31,50 @@
     width: 140px;
     box-shadow: var(--card-shadow);
     border-radius: 15px;
+}
+
+.dish-description{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.bottom-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+
+.price-tag {
+    bottom: 20px;
+    left: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.add-to-cart{
+    width: 100px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wip-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 10px;
 }
