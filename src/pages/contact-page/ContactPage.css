@@ -83,16 +83,34 @@ section p {
 }
 
 .address p {
+    font-size: 2vh;
     transform: translateY(-20px);
 }
 
+.address h2 {
+    font-size: 3vh;
+}
+
+.address h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    margin-top: 10px;
+}
+
+
 .map {
     width: 100%;
-    height: 80%;
+    height: 100%;
 }
 
 
 @media (min-width: 768px) {
+    #section-2 {
+        height: 100vh;
+    }
     #section-2 .section-content {
         flex-direction: row;
     }

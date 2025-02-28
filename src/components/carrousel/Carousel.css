@@ -4,13 +4,14 @@
     justify-content: center;
     height: 60vh;
     width: 100%;
+    max-width: 80%;
 }
 
 .carousel-display {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 95%;
+    height: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -19,7 +20,7 @@
     display: flex;
     flex-direction: row;
     height: 100%;
-    width: 80%;
+    width: 100%;
     overflow: hidden;
     border-radius: 15px;
     background-color: red;
@@ -35,5 +36,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 100%;
+    }
+
+    .carousel-btn{
+        margin: 10px;
+    }
+
+    .carousel-btn-prev{
+        margin-right: 0;
+    }
+    .carousel-btn-next{
+        margin-left: 0;
+    }
 }
 
