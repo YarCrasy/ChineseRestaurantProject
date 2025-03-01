@@ -6,7 +6,7 @@ function MenuPage(props) {
 
 
     return (
-        <main>
+        <main className="menu-page">
             {dishes.map((dish, index) => (
                 <DishCard dish={dish} key={index} />
             ))}
