@@ -1,8 +1,8 @@
 import "./Footer.css";
-import github from "../../../public/icon-imgs/github-icon.svg";
-import linkedin from "../../../public/icon-imgs/linkedin-icon.svg";
-import twitter from "../../../public/icon-imgs/twitter-icon.svg";
-import youtube from "../../../public/icon-imgs/youtube-icon.svg";
+import github from "/icon-imgs/github-icon.svg";
+import linkedin from "/icon-imgs/linkedin-icon.svg";
+import twitter from "/icon-imgs/twitter-icon.svg";
+import youtube from "/icon-imgs/youtube-icon.svg";
 
 function Footer() {
     return (

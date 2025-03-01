@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import HomeIcon from "../../assets/icon-imgs/home-icon.svg";
+import HomeIcon from "/icon-imgs/home-icon.svg";
 import { useEffect, useState } from "react";
 
 function NavBar() {

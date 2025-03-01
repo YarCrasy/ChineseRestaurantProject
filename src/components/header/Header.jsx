@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import './Header.css';
-import logo from '../../assets/icon-imgs/logo.png';
-import menuIcon from '../../assets/icon-imgs/header-menu-icon.svg';
+import logo from '/icon-imgs/logo.png';
+import menuIcon from '/icon-imgs/header-menu-icon.svg';
 import initializeMenu from './HeaderMenuBehaviour';
 import languageSelection from './LanguageSelection';
 
