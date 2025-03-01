@@ -1,7 +1,7 @@
 # Chinese Restaurant Project
 
  <div align="center">
-  <img align="center" class="header-icon" src="src/assets/icon-imgs/lcj-icon.jpg" alt="icon" />
+  <img align="center" class="header-icon" src="public/icon-imgs/lcj-icon.jpg" alt="icon" />
   <p>Author: Yar Crasy (LINGCHENG JIANG)</p>
  </div>
 
