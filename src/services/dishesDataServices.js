@@ -20,7 +20,7 @@ const addDish = (dish) => {
 }
 
 const deleteDish = (dish) => {
-    remove(ref(db, `/dishes/${dish.id}`));
+    remove(ref(db, `/dishes/${dish.id-1}`));
 }
 
 export default { getAllDishes, importDishes, addDish, deleteDish };

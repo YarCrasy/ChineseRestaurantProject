@@ -1,7 +1,7 @@
 import SimpleDishCard from "../../components/simple-dish-card/SimpleDishCard";
 import Carousel from "../../components/carrousel/Carousel";
 
-import data from "../../services/dataService";
+import data from "../../services/dishesDataServices";
 import { useEffect, useState } from "react";
 
 import "./HomePage.css";
@@ -16,10 +16,9 @@ function HomePage(props) {
         let allDishes = [];
         data.getAllDishes().then((items) => {
             items.forEach((item) => {
-                const key = item.key;
                 const data = item.val();
                 allDishes.push({
-                    key: key,
+                    id: data.id,
                     name: data.name,
                     description: data.description,
                     price: data.price,
