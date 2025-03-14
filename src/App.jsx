@@ -18,7 +18,7 @@ import MenuPage from './pages/menu-page/MenuPage';
 import ContactPage from './pages/contact-page/ContantPage';
 
 //data imports
-import dishesData from "./assets/data-info/dishes.json";
+import dishesData from "./services/dishes.json";
 
 function App() {
 
