@@ -119,6 +119,19 @@ header {
     transform: rotate(90deg);
 }
 
+.user-profile{
+    width: auto;
+    padding: 0;
+    border: none;
+    background-image: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0;
+    background-color: var(--secondary-color);
+}
+
+
 @media (max-width: 768px) {
     .nav {
         flex-direction: row;
@@ -137,7 +150,7 @@ header {
     }
 
     .menu-toggle {
-        display: flex; /* Asegúrate de que el botón sea visible en pantallas pequeñas */
+        display: flex;
     }
 
     .nav-menu {
@@ -154,7 +167,7 @@ header {
         display: block;
         justify-content: flex-start;
         text-align: center;
-        z-index: 1001; /* Asegúrate de que el z-index sea menor que el del botón */
+        z-index: 1001;
     }
 
     .nav-menu.active {
