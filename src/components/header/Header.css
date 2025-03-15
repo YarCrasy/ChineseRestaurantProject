@@ -137,7 +137,7 @@ header {
     }
 
     .menu-toggle {
-        display: flex; /* Asegúrate de que el botón sea visible en pantallas pequeñas */
+        display: flex;
     }
 
     .nav-menu {
@@ -154,7 +154,7 @@ header {
         display: block;
         justify-content: flex-start;
         text-align: center;
-        z-index: 1001; /* Asegúrate de que el z-index sea menor que el del botón */
+        z-index: 1001;
     }
 
     .nav-menu.active {
