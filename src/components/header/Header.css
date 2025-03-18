@@ -119,6 +119,19 @@ header {
     transform: rotate(90deg);
 }
 
+.user-profile{
+    width: auto;
+    padding: 0;
+    border: none;
+    background-image: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0;
+    background-color: var(--secondary-color);
+}
+
+
 @media (max-width: 768px) {
     .nav {
         flex-direction: row;
