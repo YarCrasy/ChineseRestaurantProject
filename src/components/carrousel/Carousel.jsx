@@ -1,34 +1,47 @@
 import PropTypes from 'prop-types';
-import CarouselBehaviour from './CarouselBehaviour.js';
 import './Carousel.css';
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
-function Carousel({ contentList, autoPlay = true }) {
+function Carousel({ contentList }) {
     const containerRef = useRef(null);
+    containerRef.current
 
-    CarouselBehaviour(containerRef, contentList, autoPlay);
+    const content2Display = [];
+    content2Display.push(contentList);
+
+    useEffect(() => {
+        let counter = 0;
+        let interval = setInterval(() => {
+            const children = containerRef.current.children;
+            let nextPos = -1 * counter;
+
+            for (let i = 0; i < children.length; i++) {
+                children[i].style.transform = `translateX(${nextPos}px)`;
+            }
+
+            for(let i = 0; i < children.length; i++) {
+                if(children[i].getBoundingClientRect().x < -300) {
+                    console.log(children[i].getBoundingClientRect().x);
+                    children[i].style.transform = `translateX(${nextPos + (children.length * 420)}px)`;
+                }
+            }
+
+            counter++;
+        }, 1);
+
+        return () => clearInterval(interval);
+    }, [contentList]);
 
     return (
         <div className="carousel">
             <div className="carousel-display">
-                <button
-                    // onMouseDown={startScrollLeft}
-                    // onMouseUp={stopScroll}
-                    // onMouseLeave={stopScroll}
-                    className="carousel-btn carousel-btn-prev">
+                <button className="carousel-btn carousel-btn-prev">
                     ‹
                 </button>
-                <div
-                    className="carousel-container"
-                    ref={containerRef}
-                    /* onScroll={handleScroll} */>
-                        {contentList}
+                <div className="carousel-container" ref={containerRef}>
+                    {content2Display}
                 </div>
-                <button
-                    // onMouseDown={startScrollRight}
-                    // onMouseUp={stopScroll}
-                    // onMouseLeave={stopScroll}
-                    className="carousel-btn carousel-btn-next">
+                <button className="carousel-btn carousel-btn-next">
                     ›
                 </button>
             </div>
