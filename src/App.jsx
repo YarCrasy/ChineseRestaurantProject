@@ -52,7 +52,6 @@ function App() {
 
                     <Route path="/legal/privacy" element={<div>privacy</div>} />
                     <Route path="/legal/terms" element={<div>terms</div>} />
-
                 </Routes>
             </Router>
 

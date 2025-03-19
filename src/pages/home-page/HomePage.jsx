@@ -22,7 +22,7 @@ function HomePage(props) {
                     name: data.name,
                     description: data.description,
                     price: data.price,
-                    img: data.img,
+                    image: data.image,
                 });
             });
 

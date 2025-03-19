@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import HomeIcon from "/icon-imgs/home-icon.svg";
+import HomeIcon from "../../imgs/icon-imgs/home-icon.svg";
 import { useEffect, useState } from "react";
 
 function NavBar() {
@@ -13,8 +13,7 @@ function NavBar() {
     return (
         <nav
             className="nav-bar"
-            style={{ display: sections.length === 0 ? "none" : undefined }} /* Conditional display */
-        >
+            style={{ display: sections.length === 0 ? "none" : undefined }}>
             {sections.map((section, index) => (
                 <a key={index} href={`#section-${index}`}>
                     <img src={HomeIcon} alt={`Section${index + 1}`} />
