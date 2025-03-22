@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import "./DishCard.css";
 
 function DishCard(props) {
@@ -29,5 +30,14 @@ function DishCard(props) {
         </div>
     );
 }
+DishCard.propTypes = {
+    dish: PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        image: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        price: PropTypes.number.isRequired,
+    }).isRequired,
+};
 
 export default DishCard;

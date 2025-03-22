@@ -1,5 +1,6 @@
 import DishCard from "../../components/dish-card/DishCard";
 import "./MenuPage.css";
+import PropTypes from 'prop-types';
 
 function MenuPage(props) {
     const dishes = props.dishes;
@@ -13,5 +14,9 @@ function MenuPage(props) {
         </main>
     );
 }
+
+MenuPage.propTypes = {
+    dishes: PropTypes.array.isRequired,
+};
 
 export default MenuPage;

@@ -3,6 +3,7 @@ import Carousel from "../../components/carrousel/Carousel";
 
 import data from "../../services/dishesDataServices";
 import { useEffect, useState } from "react";
+import PropTypes from 'prop-types';
 
 import "./HomePage.css";
 
@@ -52,5 +53,8 @@ function HomePage(props) {
         </main>
     );
 }
+HomePage.propTypes = {
+    dishes: PropTypes.array.isRequired,
+};
 
 export default HomePage;

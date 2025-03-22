@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="news.xsd" version="2.0">
 
     <channel>
-        <title>TO DO</title>
-        <link>TO DO LINK</link>
-        <description>TO DO Description</description>
+        <title>Chinese Restaurant News</title>
+        <link>https://www.chineserestaurant.com/news</link>
+        <description>Latest updates and news from our Chinese Restaurant</description>
         <item>
             <title>RSS Tutorial</title>
             <link>https://www.w3schools.com/xml/xml_rss.asp</link>
