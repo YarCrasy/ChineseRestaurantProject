@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import './Header.css';
 import logo from '../../imgs/icon-imgs/logo.png';
+import userIcon from '../../imgs/icon-imgs/lcj-icon.jpg';
 import menuIcon from '../../imgs/icon-imgs/header-menu-icon.svg';
 import initializeMenu from './HeaderMenuBehaviour';
 import languageSelection from './LanguageSelection';
@@ -14,8 +15,7 @@ function Header() {
     return (
         <header>
             <nav className="nav">
-
-                <a href="/home">
+                <a href="/home"  title="go to the home page">
                     <div className="logo-container">
                         <img src={logo} alt="Logo" className="logo-img" />
                         <h1 className="logo">Chuan Min Fusion</h1>
@@ -28,24 +28,26 @@ function Header() {
 
                 <div className="nav-menu">
                     <div className="nav-links">
+
                         <a href="/menu">Menu</a>
+                        <a href="/news">News</a>
                         <a href="/contact">Contact</a>
-                        <div className="lang-dropdown">
+
+                        <div className="lang-dropdown" title="work in progress">
                             <button className="dropdown-btn">EN ▼</button>
                             <div className="dropdown-content">
                                 <a data-lang="en">English</a>
                                 <a data-lang="es">Español</a>
                             </div>
                         </div>
+                        
+                        <button className="user-profile" title="work in progress">
+                            <div className="logo-container">
+                                <img src={userIcon} alt="Logo" className="logo-img" />
+                            </div>
+                        </button>
                     </div>
                 </div>
-
-                <button className="user-profile">
-                    <div className="logo-container">
-                        <img src={logo} alt="Logo" className="logo-img" />
-                    </div>
-                </button>
-
 
             </nav>
         </header>

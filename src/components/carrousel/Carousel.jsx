@@ -1,45 +1,15 @@
 import PropTypes from 'prop-types';
 import './Carousel.css';
-import { useRef, useEffect, useState } from 'react';
+import CarouselBehaviour from './CarouselBehaviour';
 
 function Carousel({ contentList }) {
-    const containerRef = useRef(null);
-    const [direction, setDirection] = useState(1);
-    const [position, setPosition] = useState(0);
+    const {
+        containerRef,
+        handlePrevClick,
+        handleNextClick } = CarouselBehaviour(contentList);
 
     const content2Display = [];
     content2Display.push(contentList);
-
-    useEffect(() => {
-        let interval = setInterval(() => {
-            const children = containerRef.current.children;
-            let nextPos = position + direction * 2; // Adjust speed as needed
-
-            for (let i = 0; i < children.length; i++) {
-                children[i].style.transform = `translateX(${nextPos}px)`;
-            }
-
-            for (let i = 0; i < children.length; i++) {
-                if (children[i].getBoundingClientRect().x < -300) {
-                    children[i].style.transform = `translateX(${nextPos + (children.length * 420)}px)`;
-                } else if (children[i].getBoundingClientRect().x > 3000) {
-                    children[i].style.transform = `translateX(${nextPos - (children.length * 420)}px)`;
-                }
-            }
-
-            setPosition(nextPos);
-        }, 16);
-
-        return () => clearInterval(interval);
-    }, [contentList, direction, position]);
-
-    const handlePrevClick = () => {
-        setDirection(-1);
-    };
-
-    const handleNextClick = () => {
-        setDirection(1);
-    };
 
     return (
         <div className="carousel">

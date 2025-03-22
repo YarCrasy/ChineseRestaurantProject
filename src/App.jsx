@@ -19,6 +19,7 @@ import ContactPage from './pages/contact-page/ContantPage';
 
 //data imports
 import dishesData from "./services/dishes.json";
+import NewsPage from './pages/news-page/NewsPage';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
                     <Route path="/" element={<HomePage dishes={dishesData} />} />
                     <Route path="/home" element={<HomePage dishes={dishesData} />} />
                     <Route path="/menu" element={<MenuPage dishes={dishesData} />} />
+                    <Route path="/news" element={<NewsPage />} />
                     <Route path="/contact" element={<ContactPage />} />
 
                     <Route path="/legal/privacy" element={<div>privacy</div>} />
