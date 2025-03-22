@@ -4,7 +4,7 @@
 
 @media (min-width: 768px){
     .nav-bar{
-        background-color: var(--primary-color);
+        background-color: whitesmoke;
         position: fixed;
         width: 25px;
         top: 50%;

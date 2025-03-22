@@ -34,7 +34,11 @@ function Footer() {
                 </div>
                 <p className="copyright">
                     &copy; 2025 ChuanMin Fusion. <br />
-                    All rights reserved.</p>
+                    All rights reserved.
+                </p>
+                <p>
+                    <a href="/legal/privacy">Privacy Policy</a> | <a href="/legal/terms">Terms of Use</a>
+                </p>
             </div>
         </footer>
     );

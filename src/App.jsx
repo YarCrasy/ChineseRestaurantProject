@@ -21,6 +21,8 @@ import ContactPage from './pages/contact-page/ContantPage';
 //data imports
 import dishesData from "./services/dishes.json";
 import NewsPage from './pages/news-page/NewsPage';
+import PrivacyPage from './pages/privacy-policy-page/PrivacyPage';
+import UseConditions from './pages/use-conditions-page/UseConditions';
 
 function App() {
 
@@ -55,8 +57,8 @@ function App() {
                     <Route path="/news" element={<NewsPage />} />
                     <Route path="/contact" element={<ContactPage />} />
 
-                    <Route path="/legal/privacy" element={<div>privacy</div>} />
-                    <Route path="/legal/terms" element={<div>terms</div>} />
+                    <Route path="/legal/privacy" element={<PrivacyPage />} />
+                    <Route path="/legal/terms" element={<UseConditions />} />
 
                 </Routes>
             </Router>
