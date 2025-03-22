@@ -1,9 +1,9 @@
 import "./Footer.css";
-import github from "../../imgs/icon-imgs/github-icon.svg";
-import linkedin from "../../imgs/icon-imgs/linkedin-icon.svg";
-import twitter from "../../imgs/icon-imgs/twitter-icon.svg";
-import youtube from "../../imgs/icon-imgs/youtube-icon.svg";
-import rss from "../../imgs/icon-imgs/rss-icon.svg";
+import github from "/imgs/icon-imgs/github-icon.svg";
+import linkedin from "/imgs/icon-imgs/linkedin-icon.svg";
+import twitter from "/imgs/icon-imgs/twitter-icon.svg";
+import youtube from "/imgs/icon-imgs/youtube-icon.svg";
+import rss from "/imgs/icon-imgs/rss-icon.svg";
 
 function Footer() {
     return (

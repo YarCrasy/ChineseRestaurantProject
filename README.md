@@ -11,18 +11,25 @@ Due to this repository has a .gitignore that disable the /node_modules push, eve
 npm install
 ```
  
+ ## Changelog
+ * Changed the Carousel behavior to have smoothier scrolling
+ * Added the News page for future events, sales, or others anouncement
+ * Added a RSS link that can be subscribed (conten TODO)
+ * Added new sections to the header, for localization and user profile (behaviour TODO)
+
  ## About the Project
 <p>
- This project is a part of a school project to make a simple web page for LND, but also is a part of a project for a restaurant bussiness plan 
+ This project is a part of a school project to make a simple web page for LND, but also is a part of a project for a restaurant bussiness plan.
 </p>
 <p>The web is actually hosted <a href="https://chuanminfusion.web.app/">here</a> with Github Pages</p>
+<p>this project follows the standar of ESLint</p>
 
  ## Build with
  For now, the project is made with: 
  * HTML
  * CSS
  * React+Vite
- * Firebase (hosting)
+ * Firebase (hosting, realtime database)
 
 ## Composition
 the web is composed mainly with 2 components, header and footer. The main tag is changed by the pages in each route.

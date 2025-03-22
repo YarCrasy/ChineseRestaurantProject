@@ -5,7 +5,7 @@
         "category": "soups",
         "description": "Description1",
         "price": 100,
-        "image": "../src/imgs/icon-imgs/logo.png"
+        "image": "/imgs/icon-imgs/logo.png"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "category": "soups",
         "description": "Description2",
         "price": 200,
-        "image": "../src/imgs/icon-imgs/logo.png"
+        "image": "/imgs/icon-imgs/logo.png"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "category": "soups",
         "description": "Description3",
         "price": 300,
-        "image": "../src/imgs/icon-imgs/logo.png"
+        "image": "/imgs/icon-imgs/logo.png"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "category": "soups",
         "description": "Description4",
         "price": 400,
-        "image": "../src/imgs/icon-imgs/logo.png"
+        "image": "/imgs/icon-imgs/logo.png"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "category": "soups",
         "description": "Description5",
         "price": 500,
-        "image": "../src/imgs/icon-imgs/logo.png"
+        "image": "/imgs/icon-imgs/logo.png"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "category": "soups",
         "description": "Description6",
         "price": 600,
-        "image": "../src/imgs/icon-imgs/logo.png"
+        "image": "/imgs/icon-imgs/logo.png"
     },
     {
         "id": 7,

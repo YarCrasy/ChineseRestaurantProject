@@ -1,5 +1,5 @@
 import "./NewsPage.css";
-import rss from "../../imgs/icon-imgs/rss-icon.svg";
+import rss from "/imgs/icon-imgs/rss-icon.svg";
 
 function NewsPage() {
     return (

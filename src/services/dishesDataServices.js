@@ -1,4 +1,4 @@
-import db from "./firebase";
+import {db} from "./firebase";
 import { ref, set, push, remove, get } from "firebase/database";
 
 const dbRef = ref(db, "/dishes");

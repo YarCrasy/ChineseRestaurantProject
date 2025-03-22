@@ -10,6 +10,7 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import NavBar from './components/nav-bar/NavBar';
 import CookiesPanel from './components/cookies-panel/CookiesPanel';
+// import UserAuth from './components/user-authentification/UserAuth';
 
 //page imports
 import HomePage from './pages/home-page/HomePage'
@@ -23,7 +24,6 @@ import NewsPage from './pages/news-page/NewsPage';
 
 function App() {
 
-    // Add IntersectionObserver to reveal sections when visible
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -43,6 +43,9 @@ function App() {
         <>
             <Header />
             <NavBar />
+
+            {/* <UserAuth/> */}
+
             <Router>
                 <Routes>
                     <Route path="*" element={<NotFound />} />
@@ -54,6 +57,7 @@ function App() {
 
                     <Route path="/legal/privacy" element={<div>privacy</div>} />
                     <Route path="/legal/terms" element={<div>terms</div>} />
+
                 </Routes>
             </Router>
 

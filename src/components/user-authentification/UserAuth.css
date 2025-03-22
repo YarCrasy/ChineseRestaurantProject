@@ -1,0 +1,16 @@
+.user-auth{
+    display: flex;
+    background-color: rgb(11, 95, 49);
+    padding: 50px;
+    border-radius: 5px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    z-index: 1201;
+    left: 50vw;
+    transform: translateX(-50%);
+    width: 50%;
+}
