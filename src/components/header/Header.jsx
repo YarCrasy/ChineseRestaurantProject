@@ -53,7 +53,7 @@ function Header() {
                     </div>
                 </div>
 
-                {showUserAuth && <UserAuth />}
+                {showUserAuth && <UserAuth onClose={() => setShowUserAuth(false)} />}
             </nav>
         </header>
     );

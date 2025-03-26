@@ -1,14 +1,16 @@
 import "./UserAuth.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import PropTypes from 'prop-types';
 import { auth } from "../../services/firebase";
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
 
-function UserAuth() {
+function UserAuth({ onClose }) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [isRegister, setIsRegister] = useState(false);
     const [error, setError] = useState("");
     const [user, setUser] = useState(null);
+    const userAuthRef = useRef(null);
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -16,6 +18,19 @@ function UserAuth() {
         });
         return () => unsubscribe();
     }, []);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (userAuthRef.current && !userAuthRef.current.contains(event.target)) {
+                onClose();
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [onClose]);
 
     const handleAuth = async () => {
         try {
@@ -51,7 +66,7 @@ function UserAuth() {
 
     if (user) {
         return (
-            <div className="user-auth">
+            <div className="user-auth" ref={userAuthRef}>
                 <h2>Welcome, {user.email}</h2>
                 <button onClick={handleSignOut}>Sign Out</button>
             </div>
@@ -59,7 +74,7 @@ function UserAuth() {
     }
 
     return (
-        <div className="user-auth">
+        <div className="user-auth" ref={userAuthRef}>
             <h2>{isRegister ? "Register" : "Login"}</h2>
             {error && <p className="error-message">{error}</p>}
             <input
@@ -86,5 +101,8 @@ function UserAuth() {
         </div>
     );
 }
+UserAuth.propTypes = {
+    onClose: PropTypes.func.isRequired,
+};
 
 export default UserAuth;
