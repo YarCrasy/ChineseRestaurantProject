@@ -10,7 +10,7 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import NavBar from './components/nav-bar/NavBar';
 import CookiesPanel from './components/cookies-panel/CookiesPanel';
-// import UserAuth from './components/user-authentification/UserAuth';
+import UserAuth from './components/user-authentification/UserAuth';
 
 //page imports
 import HomePage from './pages/home-page/HomePage'
@@ -46,8 +46,6 @@ function App() {
             <Header />
             <NavBar />
 
-            {/* <UserAuth/> */}
-
             <Router>
                 <Routes>
                     <Route path="*" element={<NotFound />} />
@@ -60,7 +58,7 @@ function App() {
                     <Route path="/legal/privacy" element={<PrivacyPage />} />
                     <Route path="/legal/terms" element={<UseConditions />} />
 
-                </Routes>
+                    <Route path="/development/playground" element={<> <UserAuth/><NotFound /></>} />               </Routes>
             </Router>
 
 

@@ -1,12 +1,15 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './Header.css';
 import logo from '/imgs/icon-imgs/logo.png';
 import userIcon from '/imgs/icon-imgs/lcj-icon.jpg';
 import menuIcon from '/imgs/icon-imgs/header-menu-icon.svg';
 import initializeMenu from './HeaderMenuBehaviour';
 import languageSelection from './LanguageSelection';
+import UserAuth from '../user-authentification/UserAuth';
 
 function Header() {
+    const [showUserAuth, setShowUserAuth] = useState(false);
+
     useEffect(() => {
         initializeMenu();
         languageSelection();
@@ -41,7 +44,8 @@ function Header() {
                             </div>
                         </div>
                         
-                        <button className="user-profile" title="work in progress">
+                        <button className="user-profile" title="work in progress"
+                            onClick={() => setShowUserAuth(!showUserAuth)}>
                             <div className="logo-container">
                                 <img src={userIcon} alt="Logo" className="logo-img" />
                             </div>
@@ -49,6 +53,7 @@ function Header() {
                     </div>
                 </div>
 
+                {showUserAuth && <UserAuth />}
             </nav>
         </header>
     );

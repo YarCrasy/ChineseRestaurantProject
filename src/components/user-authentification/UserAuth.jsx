@@ -1,12 +1,21 @@
 import "./UserAuth.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { auth } from "../../services/firebase";
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
 
 function UserAuth() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [isRegister, setIsRegister] = useState(false);
+    const [error, setError] = useState("");
+    const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+            setUser(currentUser);
+        });
+        return () => unsubscribe();
+    }, []);
 
     const handleAuth = async () => {
         try {
@@ -17,6 +26,7 @@ function UserAuth() {
             }
         } catch (error) {
             console.error("Error during authentication", error);
+            setError(error.message);
         }
     };
 
@@ -26,12 +36,32 @@ function UserAuth() {
             await signInWithPopup(auth, provider);
         } catch (error) {
             console.error("Error during Google authentication", error);
+            setError(error.message);
         }
     };
+
+    const handleSignOut = async () => {
+        try {
+            await signOut(auth);
+        } catch (error) {
+            console.error("Error during sign out", error);
+            setError(error.message);
+        }
+    };
+
+    if (user) {
+        return (
+            <div className="user-auth">
+                <h2>Welcome, {user.email}</h2>
+                <button onClick={handleSignOut}>Sign Out</button>
+            </div>
+        );
+    }
 
     return (
         <div className="user-auth">
             <h2>{isRegister ? "Register" : "Login"}</h2>
+            {error && <p className="error-message">{error}</p>}
             <input
                 type="email"
                 value={email}
