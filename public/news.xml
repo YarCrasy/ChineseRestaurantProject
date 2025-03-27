@@ -4,17 +4,17 @@
 
     <channel>
         <title>Chinese Restaurant News</title>
-        <link>https://www.chineserestaurant.com/news</link>
+        <link>https://chuanminfusion.web.app/news</link>
         <description>Latest updates and news from our Chinese Restaurant</description>
         <item>
-            <title>RSS Tutorial</title>
-            <link>https://www.w3schools.com/xml/xml_rss.asp</link>
-            <description>New RSS tutorial on W3Schools</description>
+            <title>NEWS - THE GREAT OPENNING</title>
+            <link>https://chuanminfusion.web.app/news#section-1</link>
+            <description>We are happy to announce the openning of our first restaurant in Las Palmas de GC!</description>
         </item>
         <item>
-            <title>XML Tutorial</title>
-            <link>https://www.w3schools.com/xml</link>
-            <description>New XML tutorial on W3Schools</description>
+            <title>SALE - 2x1 AT SPRING ROLLS</title>
+            <link>https://chuanminfusion.web.app/news#section-2</link>
+            <description>2x1 in purchases greater than 30€</description>
         </item>
     </channel>
 
