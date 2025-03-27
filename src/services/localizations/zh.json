@@ -1,0 +1,67 @@
+{
+    "homepage": {
+        "title": "川闽福馆\n川闽融合",
+        "bestSellers": "我们的畅销菜品"
+    },
+    "header": {
+        "menu": "菜单",
+        "news": "新闻",
+        "contact": "联系"
+    },
+    "footer": {
+        "subscribe": "订阅我们的 RSS！",
+        "socialMedia": "社交媒体",
+        "rightsReserved": "版权所有。",
+        "privacyPolicy": "隐私政策",
+        "termsOfUse": "使用条款"
+    },
+    "contactPage": {
+        "contactUs": "联系我们",
+        "phone": "电话",
+        "email": "电子邮件",
+        "reserveTable": "预订桌位",
+        "name": "姓名",
+        "date": "日期",
+        "time": "时间",
+        "personCount": "人数",
+        "otherInfo": "其他信息",
+        "reserveButton": "预订桌位",
+        "locateUs": "找到我们"
+    },
+    "notFound": {
+        "title": "页面未找到",
+        "message": "抱歉，您要找的页面不存在。"
+    },
+    "privacyPage": {
+        "title": "隐私政策",
+        "intro": "在 Chuan Min Fusion，我们承诺保护和尊重您的隐私。",
+        "infoCollectedTitle": "我们收集的信息",
+        "infoCollected": "我们收集您的注册信息、订单信息等。",
+        "infoUsageTitle": "信息的使用",
+        "infoUsage": "我们使用您的信息来处理订单等。",
+        "infoDisclosureTitle": "信息披露",
+        "infoDisclosure": "我们不会将您的信息用于营销目的。",
+        "accessCorrectionTitle": "访问和更正您的信息",
+        "accessCorrection": "您有权访问和更正您的信息。",
+        "cookiesTitle": "Cookies",
+        "cookies": "我们使用 cookies 来改善您的体验。",
+        "changesTitle": "隐私政策的更改",
+        "changes": "我们会定期更新隐私政策。",
+        "contactTitle": "如何联系我们",
+        "contact": "如果您有任何问题，请联系我们。"
+    },
+    "useConditions": {
+        "title": "使用条款",
+        "intro": "欢迎使用 Chuan Min Fusion 网站。",
+        "websiteUsageTitle": "网站使用",
+        "websiteUsage": "本网站内容仅供参考。",
+        "intellectualPropertyTitle": "知识产权",
+        "intellectualProperty": "本网站内容受版权保护。",
+        "linksTitle": "链接到其他网站",
+        "links": "我们不对链接网站的内容负责。",
+        "liabilityTitle": "责任限制",
+        "liability": "我们不对信息的准确性负责。",
+        "governingLawTitle": "适用法律",
+        "governingLaw": "本网站使用受西班牙法律管辖。"
+    }
+}

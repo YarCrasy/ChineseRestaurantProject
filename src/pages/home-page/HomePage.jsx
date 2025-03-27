@@ -1,5 +1,8 @@
 import SimpleDishCard from "../../components/simple-dish-card/SimpleDishCard";
 import Carousel from "../../components/carrousel/Carousel";
+import setLocalization from "../../services/localization";
+import { useContext } from "react";
+import { LanguageContext } from "../../App";
 
 import data from "../../services/dishesDataServices";
 import { useEffect, useState } from "react";
@@ -7,11 +10,12 @@ import PropTypes from 'prop-types';
 
 import "./HomePage.css";
 
-function HomePage(props) {
+function HomePage({ dishes }) {
+    const { lang } = useContext(LanguageContext);
 
-    data.importDishes(props.dishes);
+    data.importDishes(dishes);
 
-    let [dishes, setDishes] = useState([]);
+    let [dishesState, setDishes] = useState([]);
 
     const getAllDishes = () => {
         let allDishes = [];
@@ -33,7 +37,7 @@ function HomePage(props) {
         });
     }
 
-    let simpleCards = dishes.map((dish, index) => (
+    let simpleCards = dishesState.map((dish, index) => (
         <SimpleDishCard dish={dish} key={index} />
     ));
     
@@ -44,10 +48,10 @@ function HomePage(props) {
     return (
         <main>
             <section id="section-0">
-                <h2>川闽福馆<br></br>CHUAN MIN FUISION</h2>
+                <h2>{setLocalization("homepage.title", lang)}</h2>
             </section>
             <section id="section-1">
-                <h2>Our Best Sellers</h2>
+                <h2>{setLocalization("homepage.bestSellers", lang)}</h2>
                 <Carousel contentList={simpleCards} />
             </section>
         </main>

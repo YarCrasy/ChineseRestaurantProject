@@ -1,6 +1,6 @@
 //library imports
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useState, createContext } from 'react'
 
 //style imports
 import './App.css'
@@ -24,7 +24,10 @@ import NewsPage from './pages/news-page/NewsPage';
 import PrivacyPage from './pages/privacy-policy-page/PrivacyPage';
 import UseConditions from './pages/use-conditions-page/UseConditions';
 
+export const LanguageContext = createContext();
+
 function App() {
+    const [lang, setLang] = useState('en');
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
@@ -42,8 +45,8 @@ function App() {
     }, [])
 
     return (
-        <>
-            <Header />
+        <LanguageContext.Provider value={{ lang, setLang }}>
+            <Header onLanguageChange={setLang} />
             <NavBar />
 
             <Router>
@@ -54,17 +57,15 @@ function App() {
                     <Route path="/menu" element={<MenuPage dishes={dishesData} />} />
                     <Route path="/news" element={<NewsPage />} />
                     <Route path="/contact" element={<ContactPage />} />
-
                     <Route path="/legal/privacy" element={<PrivacyPage />} />
                     <Route path="/legal/terms" element={<UseConditions />} />
-
-                    <Route path="/development/playground" element={<> <UserAuth/><NotFound /></>} />               </Routes>
+                    <Route path="/development/playground" element={<> <UserAuth /><NotFound /></>} />
+                </Routes>
             </Router>
-
 
             <CookiesPanel />
             <Footer />
-        </>
+        </LanguageContext.Provider>
     )
 }
 

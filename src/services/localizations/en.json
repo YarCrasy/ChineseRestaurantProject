@@ -1,0 +1,67 @@
+{
+    "homepage": {
+        "title": "川闽福馆\nCHUAN MIN FUSION",
+        "bestSellers": "Our Best Sellers"
+    },
+    "header": {
+        "menu": "Menu",
+        "news": "News",
+        "contact": "Contact"
+    },
+    "footer": {
+        "subscribe": "Subscribe to our RSS!",
+        "socialMedia": "Social Media",
+        "rightsReserved": "All rights reserved.",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfUse": "Terms of Use"
+    },
+    "contactPage": {
+        "contactUs": "Contact Us",
+        "phone": "Phone",
+        "email": "Email",
+        "reserveTable": "Reserve Table",
+        "name": "Name",
+        "date": "Date",
+        "time": "Time",
+        "personCount": "Number of Persons",
+        "otherInfo": "Other Info",
+        "reserveButton": "Reserve Table",
+        "locateUs": "Locate Us"
+    },
+    "notFound": {
+        "title": "Page not found",
+        "message": "Sorry, the page you are looking for does not exist."
+    },
+    "privacyPage": {
+        "title": "Privacy Policy",
+        "intro": "At Chuan Min Fusion, we are committed to protecting your privacy.",
+        "infoCollectedTitle": "Information We Collect",
+        "infoCollected": "We collect information such as your name and email.",
+        "infoUsageTitle": "Use of Information",
+        "infoUsage": "We use your information to process orders.",
+        "infoDisclosureTitle": "Disclosure of Information",
+        "infoDisclosure": "We do not share your information with third parties.",
+        "accessCorrectionTitle": "Access and Correction",
+        "accessCorrection": "You can request access and correction of your information.",
+        "cookiesTitle": "Cookies",
+        "cookies": "We use cookies to improve your experience.",
+        "changesTitle": "Changes to Policy",
+        "changes": "We regularly update our privacy policy.",
+        "contactTitle": "How to Contact Us",
+        "contact": "If you have questions, please contact us."
+    },
+    "useConditions": {
+        "title": "Terms and Conditions of Use",
+        "intro": "Welcome to Chuan Min Fusion.",
+        "websiteUsageTitle": "Website Usage",
+        "websiteUsage": "The content is for general information only.",
+        "intellectualPropertyTitle": "Intellectual Property",
+        "intellectualProperty": "The content is protected by copyright.",
+        "linksTitle": "Links to Other Sites",
+        "links": "We are not responsible for linked content.",
+        "liabilityTitle": "Limitation of Liability",
+        "liability": "We do not guarantee the accuracy of the information.",
+        "governingLawTitle": "Governing Law",
+        "governingLaw": "The use of the site is subject to the laws of Spain."
+    }
+}

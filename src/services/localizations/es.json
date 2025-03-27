@@ -1,0 +1,67 @@
+{
+    "homepage": {
+        "title": "川闽福馆\nCHUAN MIN FUSIÓN",
+        "bestSellers": "Nuestros Más Vendidos"
+    },
+    "header": {
+        "menu": "Menú",
+        "news": "Noticias",
+        "contact": "Contacto"
+    },
+    "footer": {
+        "subscribe": "¡Suscríbete a nuestro RSS!",
+        "socialMedia": "Redes Sociales",
+        "rightsReserved": "Todos los derechos reservados.",
+        "privacyPolicy": "Política de Privacidad",
+        "termsOfUse": "Términos de Uso"
+    },
+    "contactPage": {
+        "contactUs": "Contáctanos",
+        "phone": "Teléfono",
+        "email": "Correo Electrónico",
+        "reserveTable": "Reservar Mesa",
+        "name": "Nombre",
+        "date": "Fecha",
+        "time": "Hora",
+        "personCount": "Número de Personas",
+        "otherInfo": "Otra Información",
+        "reserveButton": "Reservar Mesa",
+        "locateUs": "Encuéntranos"
+    },
+    "notFound": {
+        "title": "Página no encontrada",
+        "message": "Lo sentimos, la página que buscas no existe."
+    },
+    "privacyPage": {
+        "title": "Política de Privacidad",
+        "intro": "En Chuan Min Fusion, nos comprometemos a proteger tu privacidad.",
+        "infoCollectedTitle": "Información que Recopilamos",
+        "infoCollected": "Recopilamos información como tu nombre y correo electrónico.",
+        "infoUsageTitle": "Uso de la Información",
+        "infoUsage": "Usamos tu información para procesar pedidos.",
+        "infoDisclosureTitle": "Divulgación de la Información",
+        "infoDisclosure": "No compartimos tu información con terceros.",
+        "accessCorrectionTitle": "Acceso y Corrección",
+        "accessCorrection": "Puedes solicitar acceso y corrección de tu información.",
+        "cookiesTitle": "Cookies",
+        "cookies": "Usamos cookies para mejorar tu experiencia.",
+        "changesTitle": "Cambios en la Política",
+        "changes": "Actualizamos regularmente nuestra política de privacidad.",
+        "contactTitle": "Cómo Contactarnos",
+        "contact": "Si tienes preguntas, contáctanos."
+    },
+    "useConditions": {
+        "title": "Términos y Condiciones de Uso",
+        "intro": "Bienvenido a Chuan Min Fusion.",
+        "websiteUsageTitle": "Uso del Sitio Web",
+        "websiteUsage": "El contenido es solo para información general.",
+        "intellectualPropertyTitle": "Propiedad Intelectual",
+        "intellectualProperty": "El contenido está protegido por derechos de autor.",
+        "linksTitle": "Enlaces a Otros Sitios",
+        "links": "No somos responsables del contenido de los enlaces.",
+        "liabilityTitle": "Limitación de Responsabilidad",
+        "liability": "No garantizamos la exactitud de la información.",
+        "governingLawTitle": "Legislación Aplicable",
+        "governingLaw": "El uso del sitio está sujeto a las leyes de España."
+    }
+}
