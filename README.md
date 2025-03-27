@@ -1,7 +1,7 @@
 # Chinese Restaurant Project
 
  <div align="center">
-  <img align="center" class="header-icon" src="public/icon-imgs/lcj-icon.jpg" alt="icon" />
+  <img align="center" class="header-icon" src="./public/imgs/icon-imgs/lcj-icon.jpg" alt="icon" />
   <p>Author: Yar Crasy (LINGCHENG JIANG)</p>
  </div>
 
@@ -12,16 +12,18 @@ npm install
 ```
  
  ## Changelog
- * Changed the Carousel behavior to have smoothier scrolling
- * Added the News page for future events, sales, or others anouncement
- * Added a RSS link that can be subscribed (conten TODO)
- * Added new sections to the header, for localization and user profile (behaviour TODO)
+ * Added localization for static content (content from firebase TODO)
+ * Added splited RSS's xsd and added correct links to xml 
+ * Added google auth to the user profile
+
+ ## Video Showing RSS feed
+ [![Introduction Video](https://img.youtube.com/vi/hOJDhtZJfXI/0.jpg)](https://youtu.be/hOJDhtZJfXI)
 
  ## About the Project
 <p>
  This project is a part of a school project to make a simple web page for LND, but also is a part of a project for a restaurant bussiness plan.
 </p>
-<p>The web is actually hosted <a href="https://chuanminfusion.web.app/">here</a> with Github Pages</p>
+<p>The web is actually hosted <a href="https://chuanminfusion.web.app/">here</a> with Firebase Hosting</p>
 <p>this project follows the standar of ESLint</p>
 
  ## Build with
@@ -34,11 +36,12 @@ npm install
 ## Composition
 the web is composed mainly with 2 components, header and footer. The main tag is changed by the pages in each route.
 
+## Third-Part Component
+This Project uses Google Cloud Services such as Google Map, and Google Auth
 
 ## Inspired in
 <p>As a requirement of the project, it must be inspirated in one of the design from the web <b>Figma</b>.</p> 
 In this case, it was inspired in <a href="https://www.figma.com/community/file/1278204274454603082"><b>this design</b></a> but adapting thematic from telepizza and chinese food.
-
 
 ## Bibliography
 <p>React Tutorial(Spanish): <a href="https://www.youtube.com/playlist?list=PLU8oAlHdN5BmlVfm2bJshR3qPtoyukQ_b">PildorasInformaticas</a></p> 
