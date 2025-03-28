@@ -15,7 +15,7 @@ npm install
  * Added localization for static content (content from firebase TODO)
  * Added splited RSS's xsd and added correct links to xml 
  * Added google and email auth to the user profile
- * Added ProfilePage, with the account and comments management (refactor TODO)
+ * Added ProfilePage, with the account and comments management (logic and refactor TODO)
 
  ## Video Showing RSS feed
  [![Introduction Video](https://img.youtube.com/vi/hOJDhtZJfXI/0.jpg)](https://youtu.be/hOJDhtZJfXI)
