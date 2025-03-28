@@ -63,5 +63,21 @@
         "liability": "我们不对信息的准确性负责。",
         "governingLawTitle": "适用法律",
         "governingLaw": "本网站使用受西班牙法律管辖。"
+    },
+    "userHeaderIcon": {
+        "login": "登录/注册",
+        "profile": "个人资料"
+    },
+    "userAuth": {
+        "welcome": "欢迎",
+        "signOut": "登出",
+        "register": "注册",
+        "login": "登录",
+        "emailPlaceholder": "电子邮件",
+        "passwordPlaceholder": "密码",
+        "registerWithGoogle": "用 Google 注册",
+        "loginWithGoogle": "用 Google 登录",
+        "switchToLogin": "切换到登录",
+        "switchToRegister": "切换到注册"
     }
 }

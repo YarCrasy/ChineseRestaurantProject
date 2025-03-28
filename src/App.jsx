@@ -10,7 +10,6 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import NavBar from './components/nav-bar/NavBar';
 import CookiesPanel from './components/cookies-panel/CookiesPanel';
-import UserAuth from './components/user-authentification/UserAuth';
 
 //page imports
 import HomePage from './pages/home-page/HomePage'
@@ -23,6 +22,7 @@ import dishesData from "./services/dishes.json";
 import NewsPage from './pages/news-page/NewsPage';
 import PrivacyPage from './pages/privacy-policy-page/PrivacyPage';
 import UseConditions from './pages/use-conditions-page/UseConditions';
+import ProfilePage from './pages/profile-page/ProfilePage';
 
 export const LanguageContext = createContext();
 
@@ -59,7 +59,7 @@ function App() {
                     <Route path="/contact" element={<ContactPage />} />
                     <Route path="/legal/privacy" element={<PrivacyPage />} />
                     <Route path="/legal/terms" element={<UseConditions />} />
-                    <Route path="/development/playground" element={<> <UserAuth /><NotFound /></>} />
+                    <Route path="/UserProfile" element={<ProfilePage />} />
                 </Routes>
             </Router>
 

@@ -6,7 +6,6 @@ const translations = {
     es: esTranslations,
     en: enTranslations,
     zh: zhTranslations
-    // Add other languages here if needed
 };
 
 function setLocalization(key, lang = 'es') {

@@ -78,13 +78,5 @@
         "description": "Description10",
         "price": 1000,
         "image": "../src/imgs/icon-imgs/logo.png"
-    },
-    {
-        "id": 11,
-        "name": "Dish11",
-        "category": "Category9",
-        "description": "Description9",
-        "price": 900,
-        "image": "../src/imgs/icon-imgs/logo.png"
     }
 ]

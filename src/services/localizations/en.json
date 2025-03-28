@@ -63,5 +63,22 @@
         "liability": "We do not guarantee the accuracy of the information.",
         "governingLawTitle": "Governing Law",
         "governingLaw": "The use of the site is subject to the laws of Spain."
+    },
+    "userHeaderIcon":{
+        "login": "Login/Sign up",
+        "profile": "Profile"
+    },
+    "userAuth": {
+        "welcome": "Welcome",
+        "signOut": "Sign Out",
+        "register": "Register",
+        "login": "Login",
+        "emailPlaceholder": "Email",
+        "passwordPlaceholder": "Password",
+        "registerWithGoogle": "Register with Google",
+        "loginWithGoogle": "Login with Google",
+        "switchToLogin": "Switch to Login",
+        "switchToRegister": "Switch to Register"
     }
+    
 }

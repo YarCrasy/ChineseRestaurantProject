@@ -2,6 +2,7 @@ import "./UserAuth.css";
 import { useState, useEffect, useRef } from "react";
 import PropTypes from 'prop-types';
 import { auth } from "../../services/firebase";
+import googleLogo from "/imgs/icon-imgs/google-logo.svg";
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
 
 function UserAuth({ onClose }) {
@@ -58,6 +59,8 @@ function UserAuth({ onClose }) {
     const handleSignOut = async () => {
         try {
             await signOut(auth);
+            setUser(null); // Limpia el estado del usuario después de cerrar sesión
+            onClose(); // Cierra la ventana de autenticación
         } catch (error) {
             console.error("Error during sign out", error);
             setError(error.message);
@@ -94,6 +97,7 @@ function UserAuth({ onClose }) {
             </button>
             <button onClick={handleGoogleAuth}>
                 {isRegister ? "Register with Google" : "Login with Google"}
+                <img src={googleLogo} alt="Google" />
             </button>
             <button onClick={() => setIsRegister(!isRegister)}>
                 {isRegister ? "Switch to Login" : "Switch to Register"}

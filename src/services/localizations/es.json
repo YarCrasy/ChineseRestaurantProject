@@ -63,5 +63,21 @@
         "liability": "No garantizamos la exactitud de la información.",
         "governingLawTitle": "Legislación Aplicable",
         "governingLaw": "El uso del sitio está sujeto a las leyes de España."
+    },
+    "userHeaderIcon": {
+        "login": "Iniciar sesión/Registrarse",
+        "profile": "Perfil"
+    },
+    "userAuth": {
+        "welcome": "Bienvenido",
+        "signOut": "Cerrar sesión",
+        "register": "Registrarse",
+        "login": "Iniciar sesión",
+        "emailPlaceholder": "Correo Electrónico",
+        "passwordPlaceholder": "Contraseña",
+        "registerWithGoogle": "Registrarse con Google",
+        "loginWithGoogle": "Iniciar sesión con Google",
+        "switchToLogin": "Cambiar a Iniciar sesión",
+        "switchToRegister": "Cambiar a Registrarse"
     }
 }
