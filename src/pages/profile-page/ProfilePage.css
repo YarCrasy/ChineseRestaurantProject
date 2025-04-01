@@ -1,77 +1,27 @@
-h1 {
-  text-align: center;
-  color: #333;
-  margin-top: 20px;
+main{
+  margin-top: 100px;
 }
 
-.profile-page {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  color: #333;
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.profile-header {
-  text-align: center;
-  margin-bottom: 30px;
+.profile-data{
+  display: flex;
+  flex-direction: row;
 }
 
-.profile-avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+main button {
+  max-width: 400px;
+  height: 50px;
+  align-items: end;
 }
 
-.logout-button {
-  background-color: #ff4d4d;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.logout-button:hover {
-  background-color: #cc0000;
-}
-
-.profile-container {
-  max-width: 600px;
-  margin: 20px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.profile-container img {
-  display: block;
-  margin: 0 auto;
-  border: 2px solid #ddd;
-}
-
-.profile-container p {
-  text-align: center;
-  color: #555;
-}
-
-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #0056b3;
+.logout-bttn{
+  margin-top: auto;
+  align-self: flex-end;
 }
 
 textarea, input[type="email"], input[type="password"], select {
@@ -90,23 +40,6 @@ textarea:focus, input:focus, select:focus {
 
 .comments-section {
   margin-top: 20px;
-}
-
-.comments-section h2 {
-  color: #333;
-}
-
-.comments-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.comments-section li {
-  background: #f1f1f1;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  color: #555;
 }
 
 .comments-container {
@@ -161,4 +94,13 @@ textarea:focus, input:focus, select:focus {
   color: green;
   margin-top: 10px;
   text-align: center;
+}
+
+.update-container{
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
 }

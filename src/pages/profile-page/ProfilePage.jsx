@@ -55,31 +55,39 @@ function ProfilePage() {
 
    return (
       <main>
-         <h1>Profile Page</h1>
-         <p>Welcome, {user.displayName || user.email}!</p>
-         <p>Email: {user.email}</p>
-         <img src={user.photoURL || defaultUserIcon} alt="User Avatar" />
+         <div className="profile-data">
+            <div className="data-container">
+               <h1>Profile Page</h1>
+               <p>Welcome, {user.displayName || user.email}!</p>
+               <p>Email: {user.email}</p>
+               <img src={user.photoURL || defaultUserIcon} alt="User Avatar" />
+            </div>
 
-         <button onClick={handleLogout}>Logout</button>
+            <button onClick={handleLogout} className="logout-bttn">Logout</button>
+         </div>
 
-         <div>
-            <h2>Update Email</h2>
-            <input
-               type="email"
-               value={newEmail}
-               onChange={(e) => setNewEmail(e.target.value)}
-               placeholder="New Email"
-            />
-            <button onClick={handleUpdateEmail}>Update Email</button>
+         <div className="update-container">
+            <div className="email-container">
+               <h2>Update Email</h2>
+               <input
+                  type="email"
+                  value={newEmail}
+                  onChange={(e) => setNewEmail(e.target.value)}
+                  placeholder="New Email"
+               />
+               <button onClick={handleUpdateEmail}>Update Email</button>
+            </div>
 
-            <h2>Update Password</h2>
-            <input
-               type="password"
-               value={newPassword}
-               onChange={(e) => setNewPassword(e.target.value)}
-               placeholder="New Password"
-            />
-            <button onClick={handleUpdatePassword}>Update Password</button>
+            <div className="password-container">
+               <h2>Update Password</h2>
+               <input
+                  type="password"
+                  value={newPassword}
+                  onChange={(e) => setNewPassword(e.target.value)}
+                  placeholder="New Password"
+               />
+               <button onClick={handleUpdatePassword}>Update Password</button>
+            </div>
 
             {updateMessage && <p>{updateMessage}</p>}
          </div>
