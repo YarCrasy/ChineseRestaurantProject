@@ -17,9 +17,6 @@ npm install
  * Added google and email auth to the user profile
  * Added ProfilePage, with the account and comments management (logic and refactor TODO)
 
- ## Video Showing RSS feed
- [![Introduction Video](https://img.youtube.com/vi/hOJDhtZJfXI/0.jpg)](https://youtu.be/hOJDhtZJfXI)
-
  ## About the Project
 <p>
  This project is a part of a school project to make a simple web page for LND, but also is a part of a project for a restaurant bussiness plan.
